@@ -1,13 +1,50 @@
 .pagina-principal {
-    background-image: linear-gradient(to bottom,#ff0b00 0%, #fc716b 35%, #fffcf0 100%);
+    /* background-image: linear-gradient(to bottom,#ff0b00 0%, #fc716b 35%, #fffcf0 100%); */
+    background-image: linear-gradient(to bottom,#feb4cd 50%, #fff35f 50%);
+    /* position: relative; */
+    height: 1600px;
+    width: auto;
 }
+/* color #feb4cd, #fff35f */
 hgroup {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.i1 {
+.galeria {
+    margin-top: 0;
+}
+.imagen1 {
+    border: 2px solid;
+    border-radius: 16rem;
+    width: 38%;
+    margin: -4%;
+    height: 115vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.titulo {
+    position: relative;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #2353f5;
+    text-align: center;
+    font-size: 90px;
+    bottom: 30px;
+}
+.imagen2 {
+    border: 2px solid;
+    position: relative;
+    border-radius: 30px;
+}
+.imagen3 {
+    border: 2px solid;
     display: flex;
-    justify-content: center;
-    border-radius: 300px;
+    border-radius: 20px;
+    margin-left: auto;
+    flex-direction: column;
 }
