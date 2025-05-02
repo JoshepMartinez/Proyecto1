@@ -1,7 +1,7 @@
 .pagina-principal {
     /* background-image: linear-gradient(to bottom,#ff0b00 0%, #fc716b 35%, #fffcf0 100%); */
-    background-image: linear-gradient(to bottom,#feb4cd 50%, #fff35f 50%);
-    /* position: relative; */
+    background-image:linear-gradient(to bottom, transparent 50%, black 50%, black 50.1%, transparent 50.3%),
+    linear-gradient(to bottom,#feb4cd 50%, #fff35f 50%);
     height: 1600px;
     width: auto;
 }
@@ -11,15 +11,15 @@ hgroup {
     justify-content: center;
     align-items: center;
 }
-.galeria {
+.img {
     margin-top: 0;
 }
 .imagen1 {
-    border: 2px solid;
+    border: 2px solid black;
     border-radius: 16rem;
-    width: 38%;
+    width: 35%;
     margin: -4%;
-    height: 115vh;
+    height: 110vh;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -32,19 +32,120 @@ hgroup {
     padding: 0;
     text-align: center;
     color: #2353f5;
-    text-align: center;
-    font-size: 90px;
+    font-size: 85px;
     bottom: 30px;
+    font-weight: bold;
 }
 .imagen2 {
+    display: flex;
+    flex-direction: column;
     border: 2px solid;
-    position: relative;
     border-radius: 30px;
+    margin-right: auto;
+    position: absolute;
+    right: 10%;
+    bottom: 480px;
 }
 .imagen3 {
+    position: absolute;
     border: 2px solid;
     display: flex;
-    border-radius: 20px;
-    margin-left: auto;
+    border-radius: 30px;
     flex-direction: column;
+    bottom: -10px;
+    left: -2%;
+}
+.Menu {
+    display: grid;
+    grid-template-rows: auto; 
+}
+.chat {
+    position: fixed;
+    border: 2px solid black;
+    bottom: 0;
+    border-radius: 150px;
+    width: 150px;
+    height: 150px;
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif,cursive;
+    
+}
+#nosotros {
+    background-color: #fff35f;
+    width: auto;
+    height: 1000px;
+}
+#galeria {
+    background-image:linear-gradient(to bottom, transparent 70%, black 70%, black 70.1%, transparent 70.3%),
+    linear-gradient(to bottom, white 70%, orange 30%);
+    width: auto;
+    height: 1000px;
+    border: 1px solid;
+}
+#precios {
+    margin: 0;
+    display: grid;
+    width: 100%;
+    height: 80vh;
+    grid-template-areas: "i1 i1 i2 i3 i4"
+                         "i5 i5 i2 i3 i4"
+                         "i6 i7 i7 i8 i8"
+                         "i6 i7 i7 i9 i9";
+}
+.caja1 {
+    border: 1px solid black;
+    background-color: #feb4cd;
+    grid-area: i1;
+}
+.caja2 {
+    border: 1px solid black;
+    background-color: #fff35f;
+    grid-area: i2;
+}
+.caja3 {
+    border: 1px solid black;
+    background-color: white;
+    grid-area: i3;
+}
+.caja4 {
+    border: 1px solid black;
+    background-color: blue;
+    grid-area: i4;
+}
+.caja5 {
+    border: 1px solid black;
+    background-color: #feb4cd;
+    grid-area: i5;
+}
+.caja6 {
+    border: 1px solid black;
+    background-color: #fff35f;
+    grid-area: i6;
+}
+.caja7 {
+    border: 1px solid black;
+    background-color: black;
+    grid-area: i7;
+}
+.caja8 {
+    border: 1px solid black;
+    background-color: orangered;
+    grid-area: i8;
+}
+.caja9 {
+    border: 1px solid black;
+    background-color: #feb4cd;
+    grid-area: i9;
+}
+#contacto {
+    border-top: 2px solid blue;
+    background-color: #feb4cd;
+    height: 100vh;
 }
