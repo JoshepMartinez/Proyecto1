@@ -1,9 +1,45 @@
-.pagina-principal {
-    /* background-image: linear-gradient(to bottom,#ff0b00 0%, #fc716b 35%, #fffcf0 100%); */
-    background-image:linear-gradient(to bottom, transparent 50%, black 50%, black 50.1%, transparent 50.3%),
-    linear-gradient(to bottom,#feb4cd 50%, #fff35f 50%);
-    height: 1600px;
-    width: auto;
+* { 
+    box-sizing: border-box; 
+}
+@font-face {
+    font-family: "anybody";
+    src: url(../font/Anybody-Black.ttf);
+}
+@font-face {
+    font-family: "gulfs";
+    src: url(../font/GulfsDisplay-Normal.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@keyframes rotar {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 45.5vw 100vw 80vw 80vw 60vw 10vw;
+    margin: 0;
+    padding: 0;
+}
+header{
+    grid-column: 1/span 8;
+    grid-row: 1/ span 1;
+    border-bottom: 2px solid black;
+    background-color: #ffb4cc;
+    position: relative; 
 }
 /* color #feb4cd, #fff35f */
 hgroup {
@@ -11,53 +47,146 @@ hgroup {
     justify-content: center;
     align-items: center;
 }
-.img {
-    margin-top: 0;
-}
-.imagen1 {
-    border: 2px solid black;
-    border-radius: 16rem;
-    width: 35%;
-    margin: -4%;
-    height: 110vh;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-
-}
-.titulo {
-    position: relative;
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    color: #2353f5;
-    font-size: 85px;
-    bottom: 30px;
+.Menu {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 5%;
+    padding: 20px;
     font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+.Menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.titulo{
+    position: relative;
+    text-align: center;
+    color: #045cfc;
+    font-family: "gulfs";
+    font-size:2.25vw;
+    line-height:0.9;
+    z-index: 4; 
+    bottom: 1%;
+}
+.img{
+    position: relative;
+    bottom: 28%;
+    height: 140%;    
 }
 .imagen2 {
     display: flex;
-    flex-direction: column;
-    border: 2px solid;
-    border-radius: 30px;
-    margin-right: auto;
-    position: absolute;
-    right: 10%;
-    bottom: 480px;
+    justify-content: flex-end;
+    position: relative;
+    right: 4%;
+}
+.imagen2 img{
+    position: relative;
+    width: 16%;
+    border: 2px solid black;
+    border-radius: 10%;
+}
+.imagen1{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: 22.5%;
+    height: 100%;
+}
+.imagen1 img{
+    width: 36%;
+    border: 2px solid black;
+    border-radius: 38%;
+    height: 90%;
 }
 .imagen3 {
-    position: absolute;
-    border: 2px solid;
-    display: flex;
-    border-radius: 30px;
-    flex-direction: column;
-    bottom: -10px;
-    left: -2%;
+    position: relative;
+    bottom: 111%;
 }
-.Menu {
-    display: grid;
-    grid-template-rows: auto; 
+.imagen3 img {
+    border: 2px solid black;
+    width: 25%;
+    border-radius: 10%;
+    
+}
+.estrella-1 img {
+    width: 3%;
+}
+.estrella-1 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    bottom: 164%;
+    right: 20%;
+}
+.estrella-2 img {
+    width: 1.4%;
+}
+.estrella-2{
+    display: flex;
+    position: relative;
+    bottom: 191%;
+    justify-content: center;
+    right: 22%;
+}
+.estrella-3 img {
+    width: 1.4%;
+}
+.estrella-3{
+    display: flex;
+    position: relative;
+    bottom: 175%;
+    justify-content: flex-end;
+    right: 30%;
+}
+.division{
+    display: flex;
+    position: relative;
+    bottom: 102.5vw;
+}
+.estrellaAzul img {
+    width: 10vw;
+    position: relative;
+    left: 4vw;
+    top:2vw ;
+    object-fit: fill;
+    animation: rotar 5s linear infinite;
+}
+.estrellaAzul {
+    height: 8vw;
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    width: 70vw; 
+}
+.caraFeliz img {
+    width: 12.5vw;
+    animation: rotar 5s linear infinite;
+    margin-right:14vw;
+    position: relative;
+    margin-left: 40vw;
+}
+.caraFeliz {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    bottom: 2vw;
+}
+.rayo img {
+    width: 7vw;
+}
+.rayo {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    right: 17vw;
+    bottom: 112vw ;
 }
 .chat {
     position: fixed;
@@ -75,7 +204,6 @@ hgroup {
     align-items: center;
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif,cursive;
-    
 }
 #nosotros {
     background-color: #fff35f;
@@ -98,33 +226,51 @@ hgroup {
                          "i5 i5 i2 i3 i4"
                          "i6 i7 i7 i8 i8"
                          "i6 i7 i7 i9 i9";
+    grid-template-rows: 20%;
 }
 .caja1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid black;
     background-color: #feb4cd;
     grid-area: i1;
 }
 .caja2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid black;
     background-color: #fff35f;
     grid-area: i2;
 }
 .caja3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid black;
     background-color: white;
     grid-area: i3;
 }
 .caja4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid black;
     background-color: blue;
     grid-area: i4;
 }
 .caja5 {
+    display: flex;
+    justify-content: center;
     border: 1px solid black;
     background-color: #feb4cd;
     grid-area: i5;
 }
 .caja6 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid black;
     background-color: #fff35f;
     grid-area: i6;
@@ -135,11 +281,15 @@ hgroup {
     grid-area: i7;
 }
 .caja8 {
+    display: flex;
+    justify-content: center;
     border: 1px solid black;
     background-color: orangered;
     grid-area: i8;
 }
 .caja9 {
+    display: flex;
+    justify-content: center;
     border: 1px solid black;
     background-color: #feb4cd;
     grid-area: i9;
